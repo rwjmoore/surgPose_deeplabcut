@@ -1,6 +1,9 @@
 # surgPose_deeplabcut
 Repository for using the deeplabcut toolbox for keypoint detection on the SurgPose Dataset. The benchmarks were generated using the Multi-Animal configuration of the deeplabcut toolbox. 
 
+[![Watch the video](https://raw.githubusercontent.com/username/repository/branch/path/to/thumbnail.jpg)](https://raw.githubusercontent.com/username/repository/branch/path/to/video.mp4)
+
+
 ## Instructions for Reproducing Benchmark Results 
 1. Install deeplabcut3 with: `pip install deeplabcut`
 2. Create a new project using the deeplabcut graphical user interface (GUI) by first running: `python -m deeplabcut`. NOTE: Any video can be selected in the GUI prompt because we will be using a custom formatted dataset. Make sure to select "multianimalproject".
