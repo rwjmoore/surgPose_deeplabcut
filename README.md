@@ -1,5 +1,5 @@
 # surgPose_deeplabcut
-Repository for using the deeplabcut toolbox for keypoint detection on the SurgPose Dataset. The benchmarks were generated using the Multi-Animal configuration of the deeplabcut toolbox. 
+Repository for using the [deeplabcut toolbox](https://github.com/DeepLabCut/DeepLabCut) for keypoint detection on the SurgPose Dataset. The benchmarks were generated using the Multi-Animal configuration of the deeplabcut toolbox. 
 
 ![alt text](https://github.com/rwjmoore/surgPose_deeplabcut/blob/main/surgPoseDeeplabCut.png?raw=true)
 
