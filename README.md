@@ -31,4 +31,6 @@ Repository for using the [deeplabcut toolbox](https://github.com/DeepLabCut/Deep
 
 <p align="center">
   <img src="https://github.com/rwjmoore/surgPose_deeplabcut/blob/main/keypointConfidence.png" alt="Sublime's custom image"/>
+   <br>
+   Left Tool Keypoint Confidence on Test Set 
 </p>
