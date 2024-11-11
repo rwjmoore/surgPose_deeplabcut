@@ -9,7 +9,7 @@ Repository for using the [deeplabcut toolbox](https://github.com/DeepLabCut/Deep
 2. Create a new project using the deeplabcut graphical user interface (GUI) by first running: `python -m deeplabcut`. NOTE: Any video can be selected in the GUI prompt because we will be using a custom formatted dataset. Make sure to select "multianimalproject".
 3. Once the project is created, configure the model hyperparameters by editing config.yaml in the project directory or by using the template config.yaml in the templates folder of this repo. If you use the template, make sure the "task", "scorer", "project_path" and "date" fields match your projects. Key portions of the config.yaml are as follows:
    - multianimalbodyparts: These should match the template file and dictate what each keypoint is named after.
-   - TrainingFraction: This is dictated by the training/test split determined in Step X. It will need to be modified manually after Step X.
+   - TrainingFraction: This is dictated by the training/test split determined in Step 5.3. You will need to change this manually after Step 5.4.
 4. Download the SurgPose Dataset from here and place the images inside the folder: projectdirectory/labeled-data/videoName/
 
 5. Open a new terminal window in the environment with deeplabcut3 installed and run the following commands:
