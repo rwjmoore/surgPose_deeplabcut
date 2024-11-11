@@ -12,9 +12,11 @@ Repository for using the [deeplabcut toolbox](https://github.com/DeepLabCut/Deep
    - TrainingFraction: This is dictated by the training/test split determined in Step X. It will need to be modified manually after Step X.
 4. Download the SurgPose Dataset from here and place the images inside the folder: projectdirectory/labeled-data/videoName/
 
-5. Open a new terminal window in the environment with deeplabuct3 installed and run the following commands:
+5. Open a new terminal window in the environment with deeplabcut3 installed and run the following commands:
    1. `ipython`
    2. `import deeplabcut`
    3. `deeplabcut.create_training_dataset("path/to/project/config.yaml",Shuffles=[0],trainIndices=[list(range(0,4505))],testIndices=[list(range(4505,5240))],net_type="resnet_101",augmenter_type="albumentations")`
-6. Navigate to the Train Network tab on the deeplabcut GUI and click "Begin Training"
-7. After Training is completed, run the following command in the terminal window from Step 5: `deeplabcut.evaluate_network("path/to/project/config.yaml",Shuffles=[0],plotting=True)`
+   4. Note the train/test fraction that this produces. Go to the config.yaml file in the main project directory and ensure that the "TrainingFraction" field in this file matches the train/test fraction.
+6. Navigate to the Train Network tab on the deeplabcut GUI. The benchmarks were generated with 17 epochs, which are selected in the Train Network tab. Once the epochs are set, click "Begin Training"
+7. After Training is completed, run the following command in the terminal window from Step 5 to evaluate its results: `deeplabcut.evaluate_network("path/to/project/config.yaml",Shuffles=[0],plotting=True)`
+8. The results can be found in: projectdirectory/evaluation-results-pytorch/iteration-0/CombinedEvaluation-results.csv
