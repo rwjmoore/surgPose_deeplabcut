@@ -29,3 +29,6 @@ Repository for using the [deeplabcut toolbox](https://github.com/DeepLabCut/Deep
 | 1  | Content Cell  |
 | 2 | Content Cell  |
 | 3  | Content Cell  |
+
+
+![alt text](https://github.com/rwjmoore/surgPose_deeplabcut/blob/main/keypointConfidence.png) 
