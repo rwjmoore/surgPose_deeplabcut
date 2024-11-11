@@ -15,6 +15,6 @@ Repository for using the [deeplabcut toolbox](https://github.com/DeepLabCut/Deep
 5. Open a new terminal window in the environment with deeplabuct3 installed and run the following commands:
    1. `ipython`
    2. `import deeplabcut`
-   3. `deeplabcut.create_training_dataset("path/to/project/config.yaml",Shuffles=[9],trainIndices=[list(range(0,4505))],testIndices=[list(range(4505,5240))],net_type="resnet_101",augmenter_type="albumentations")`
+   3. `deeplabcut.create_training_dataset("path/to/project/config.yaml",Shuffles=[0],trainIndices=[list(range(0,4505))],testIndices=[list(range(4505,5240))],net_type="resnet_101",augmenter_type="albumentations")`
 6. Navigate to the Train Network tab on the deeplabcut GUI and click "Begin Training"
 7. After Training is completed, run the following command in the terminal window from Step 5: `deeplabcut.evaluate_network("path/to/project/config.yaml",Shuffles=[0],plotting=True)`
