@@ -27,9 +27,9 @@ The main contribution of this repository is a data formatting script that can fo
 ## Benchmark Results
 | Trial         | Mean Average Precision (mAP)  |
 | ------------- | ------------- |
-| 1             | Content Cell  |
-| 2             | Content Cell  |
-| 3             | Content Cell  |
+| 1             | 67.9  |
+| 2             | 63.4  |
+| 3             | 67.95  |
 
 <p align="center">
   <img src="https://github.com/rwjmoore/surgPose_deeplabcut/blob/main/keypointConfidence.png" alt="Sublime's custom image"/>
