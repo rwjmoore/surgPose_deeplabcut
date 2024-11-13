@@ -15,8 +15,10 @@ The main contribution of this repository is a data formatting script that can fo
 3. Once the project is created, configure the model hyperparameters by editing config.yaml in the project directory or by using the template config.yaml in the templates folder of this repo. If you use the template, make sure the "task", "scorer", "project_path" and "date" fields match your projects. Key portions of the config.yaml are as follows:
    - multianimalbodyparts: These should match the template file and dictate what each keypoint is named after.
    - TrainingFraction: This is dictated by the training/test split determined in Step 5.iii. You will need to change this manually after Step 5.iv.
-4. Download the SurgPose Dataset from here and place the images inside the folder: projectdirectory/labeled-data/videoName/
-   1. TO BE DETERMINED ...
+4. Download the SurgPose Dataset from here and place the images inside the folder: projectdirectory/labeled-data/videoName/ , where videoName is the name of the video you added in Step 2. 
+   1. ***The following steps assume that the data you have downloaded consists of a training set from image id 0 to image id 20019 and a test set consists of image id 26026 to image id 30028 ***
+   2. A deeplabcut compatible file format for the annotations of the dataset is created using the script: "loadJSON_multiAnimal.py". This produces a file titled "000000DLCformat.csv"
+   3. For the deeplabcut benchmarks, this 000000DLCformat.csv file was downsampled (in the training set) to include every fourth image. The actual 000000DLCformat.csv file is attached as 
 5. Open a new terminal window in the environment with deeplabcut3 installed and run the following commands:
    1. `ipython`
    2. `import deeplabcut`
